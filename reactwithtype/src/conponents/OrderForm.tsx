@@ -25,7 +25,7 @@ export function OrderForm({ onSubmit }: OrderFormProps) {
         <input
             type="number"
             value={cups}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCups(Number(e.target.value) | | 0)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCups(Number(e.target.value) || 0)}
         />
     </form>
 }
